@@ -33,6 +33,35 @@ Console.WriteLine("valor de b:"+b);*/
             Console.WriteLine("Entrada invalida, por favor ingrese un numero.");
         }*/
 
+Console.Write("Ingrese un numero: ");
+if (!double.TryParse(Console.ReadLine(), out double num))
+{
+    Console.WriteLine("Entrada invalida. Por favor, ingrese un numero valido.");
+    return;
+}
 
+Console.WriteLine($"Valor absoluto: {Math.Abs(num)}");
+Console.WriteLine($"Cuadrado: {Math.Pow(num, 2)}");
+Console.WriteLine($"Raiz cuadrada: {Math.Sqrt(num)}");
+Console.WriteLine($"Seno: {Math.Sin(num)}");
+Console.WriteLine($"Coseno: {Math.Cos(num)}");
+Console.WriteLine($"Parte entera: {Math.Truncate(num)}");
 
+Console.Write("\nIngrese el primer numero: ");
+if (!double.TryParse(Console.ReadLine(), out double num1))
+{
+    Console.WriteLine("Entrada invalida. Por favor, ingrese un numero valido.");
+    return;
+}
 
+Console.Write("Ingrese el segundo numero: ");
+if (!double.TryParse(Console.ReadLine(), out double num2))
+{
+    Console.WriteLine("Entrada invalida. Por favor, ingrese un numero valido.");
+    return;
+}
+
+Console.WriteLine($"Maximo entre {num1} y {num2}: {Math.Max(num1, num2)}");
+Console.WriteLine($"Minimo entre {num1} y {num2}: {Math.Min(num1, num2)}");
+
+Console.WriteLine("\n¡Gracias por usar la CalculadoraV2!");
