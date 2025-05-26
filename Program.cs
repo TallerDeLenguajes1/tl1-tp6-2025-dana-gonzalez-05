@@ -6,7 +6,7 @@ a=10;
 b=a;
 Console.WriteLine("valor de a:"+a);
 Console.WriteLine("valor de b:"+b);*/
-Console.Write("Ingrese un numero: ");
+/*Console.Write("Ingrese un numero: ");
     string numIng = Console.ReadLine();
 
     if (int.TryParse(numIng, out int numero))//ingresa un string y sale (out) un tipo int
@@ -31,7 +31,7 @@ Console.Write("Ingrese un numero: ");
         else
         {
             Console.WriteLine("Entrada invalida, por favor ingrese un numero.");
-        }
+        }*/
 
 
 
